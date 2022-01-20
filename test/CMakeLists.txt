@@ -7,4 +7,7 @@ add_executable(test_adder ${CMAKE_CURRENT_SOURCE_DIR}/test_adder.cpp)
 add_test(NAME test_adder COMMAND test_adder)
 
 add_executable(test_dff ${CMAKE_CURRENT_SOURCE_DIR}/test_dff.cpp)
+target_link_libraries(test_dff maj3module)
 add_test(NAME test_dff COMMAND test_dff)
+
+add_subdirectory(mig)

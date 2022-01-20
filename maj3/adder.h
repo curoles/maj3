@@ -3,6 +3,7 @@
 #include <utility>
 #include <tuple>
 #include <cstdint>
+#include <cassert>
 
 #include "maj3/maj3gate.h"
 
@@ -82,6 +83,7 @@ static inline void RippleAdder_static_test()
 {
     RippleAdder adder {.a_ = 1, .b_ = 2};
     adder();
+    assert(adder.sum_ == 3 and adder.overflow_ == false); 
 }
 
 } // namespace maj::block

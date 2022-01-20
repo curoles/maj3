@@ -22,6 +22,6 @@ endif()
 
 enable_testing()
 
-#add_subdirectory(maj3)
+add_subdirectory(maj3)
 add_subdirectory(test)
 #add_subdirectory(doc)
